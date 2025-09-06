@@ -1,2 +1,2 @@
-spring:
-  server: 8090
+server:
+  port: 8090

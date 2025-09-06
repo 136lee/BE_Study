@@ -59,7 +59,6 @@ public class SurlController {
     }
 
     @GetMapping("/g/{id}")
-    @ResponseBody
     public String go (
             @PathVariable long id
     ){
@@ -73,6 +72,6 @@ public class SurlController {
 
         surl.increaseCount();
 
-        return "redirect: "+surl.getUrl();
+        return "redirect:" + surl.getUrl();
     }
 }
